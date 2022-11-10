@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando dados</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            background-color: rgb(132, 24, 175);
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            padding: 10px;
+            color: white;
+        }
+        p {
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Me livrei da maldição.</p>
+
+    <script>
+// Manipulação de dados de string para número usando Number.paserInt,
+// Number.paserFloat ou Number12
+// (número) + (número) = ADIÇÃO
+// (string) + (string) = CONCATENAÇÃO
+
+       let n1 = Number(window.prompt('Digite um número: '))
+       let n2 = Number(window.prompt('Digite outro número: '))
+       let s = n1 + n2
+       // usando TEMPLATE STRING: 
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    </script>
+</body>
+</html>

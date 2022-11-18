@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where you from?</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        input[type=text] {
+            padding: 5px 10px;
+            font-size: 16pt;
+        }
+        input[type=button], input[type=reset] {
+            padding: 3px 10px;
+            font-size: 16pt;
+            border: 0px;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Em qual país você nasceu?
+        <input type="text" name="pais" id="pais">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <!--<input type="reset" value="Limpar" onclick="window.location.reload()">-->
+        <p class="res"></p>
+    </div>
+
+    <script src="ex009.js"></script>
+</body>
+</html>

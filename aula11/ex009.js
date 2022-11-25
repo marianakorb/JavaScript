@@ -4,7 +4,7 @@ function verificar() {
     let resp = document.querySelector('p.res')
     let pais = String(paises.value)
     //Condição composta
-    if (pais === "brasil") {
+    if (pais != "brasil") {
         resp.innerHTML = 'Você é estrangeiro(a)'
     }else{
         resp.innerHTML = 'Você é brasileiro(a)'

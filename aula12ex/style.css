@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(6, 177, 120);
+    text-align: center;
+    font: normal 15pt Arial;
+}
+header {
+    color: white;
+    margin: 10px;
+}
+h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+}
+section {
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.39)
+}
+
+section > div#msg {
+    margin-bottom: 20px;
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    color: white;
+    font-style: italic;
+    margin-top: 20px;
+}

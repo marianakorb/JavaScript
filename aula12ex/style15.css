@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(6, 177, 120);
+    font: normal 15pt Arial;
+}
+header {
+    color: white;
+    margin: 10px;
+}
+h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+    text-align: center;
+}
+section {
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.39)
+}
+div > p {
+    margin-bottom: 10px;
+}
+
+section > div#res {
+    margin-bottom: 20px;
+}
+
+input[type=button] {
+    cursor: pointer;
+    padding: 3px 10px;
+    font-size: 14pt ;
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    margin-top: 20px;
+}

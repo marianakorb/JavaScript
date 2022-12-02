@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(6, 177, 120);
+    font: normal 15pt Arial;
+}
+header {
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+}
+section {
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.39)
+}
+
+section > div#num {
+    margin-bottom: 20px;
+}
+
+input[type=number] {
+    padding: 1px 3px;
+    font-size: 12pt;
+
+}
+input[type=button] {
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 12pt;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(34, 139, 34, 0.295);
+    color: green;
+    font-weight: bold;
+}
+input[type=button]:hover {
+    background-color: green;
+    color: white;
+    transition: 0.6s;
+    transition-timing-function: ease;
+}
+div#res > select {
+    font-size: 12pt;
+    padding: 2px 5px;
+}
+footer {
+    color: white;
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center;
+}

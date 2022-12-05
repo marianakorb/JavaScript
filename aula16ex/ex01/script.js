@@ -34,7 +34,7 @@ function finalizar() {
     if (valores.length == 0) {
         alert('Por favor, adicione algum valor!')
     } else {
-        pr.innerHTML = `<br> Total de números cadastrados: ${valores.length}` 
+        pr.innerHTML = `Total de números cadastrados: ${valores.length}` 
         res.appendChild(pr)
     }
     
@@ -52,7 +52,6 @@ function finalizar() {
     media = soma/valores.length
     pr.innerHTML += `<br>A média do valores é: ${media}`
 
-    
 }
 
 

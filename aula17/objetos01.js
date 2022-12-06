@@ -1,4 +1,5 @@
-//Adicionar funcionalidades em objetos
+//Além de guardar variáveis, os objetos
+//também guardam funcionalidades (métodos)
 let amigo = {nome: 'Mariana', 
 sexo:'F',
 peso: 54,

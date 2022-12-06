@@ -18,6 +18,7 @@ function adicionarValor() {
         let item = document.createElement('option')
         item.text = `Valor ${n} adicionado`
         lista.appendChild(item)
+        res.innerHTML = ''
         let repete = valores.indexOf(n)
 
         if(repete != -1) {
@@ -26,33 +27,48 @@ function adicionarValor() {
         } else {
             valores.push(n)  
         } 
-    } 
+    }
+    num.value = ''
+    num.focus() 
+}
+
+// Para o sort() identificar números e não strings
+function sortNumbers(a, b) {
+    if (a > b) {
+      return 1;
+    } else if (b > a) {
+      return -1;
+    } else {
+      return 0;
+    }
 }
 
 function finalizar() {
-    let pr = document.createElement('p')
+    let total = valores.length
+    let soma = 0
+    let media = 0
+    
+    valores.sort(sortNumbers) //organiza na ordem crescente para achar o maior e menor número.
+    res.innerHTML = ''
+
     if (valores.length == 0) {
         alert('Por favor, adicione algum valor!')
     } else {
-        pr.innerHTML = `Total de números cadastrados: ${valores.length}` 
-        res.appendChild(pr)
+        res.innerHTML = `<p>Total de números cadastrados: ${total}</p>` 
     }
     
-    valores.sort()
-    pr.innerHTML += `<br>O menor número cadastrado: ${valores[0]}`
-    pr.innerHTML += `<br>O maior número cadastrado: ${valores[valores.length - 1]} `
-
-    let soma = 0
     for(let i in valores) {
         soma += valores[i]    
-    }
-    pr.innerHTML += `<br>A soma de todos os valores é: ${soma}`
+    } 
+    media = soma/total
 
-    let media = 0
-    media = soma/valores.length
-    pr.innerHTML += `<br>A média do valores é: ${media}`
+    res.innerHTML += `<p>O menor número cadastrado: ${valores[0]}</p>`
+    res.innerHTML += `<p>O maior número cadastrado: ${valores[total - 1]}</p>`
+    res.innerHTML += `<p>A soma de todos os valores é: ${soma}</p>`
+    res.innerHTML += `<p>A média do valores é: ${media}</p>`
 
 }
+
 
 
 

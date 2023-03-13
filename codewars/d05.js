@@ -2,6 +2,8 @@
 Sua tarefa é criar uma função que possa receber qualquer número inteiro não negativo como argumento e retorná-lo com seus dígitos em ordem decrescente. Essencialmente, reorganize os dígitos para criar o maior número possível.
 */
 
+// NÃO DEU CERTO. REFAZER!!!
+
 function descendingOrder(n){
     //Convertendo número para array:
     //let myFunc = num => Number(num)

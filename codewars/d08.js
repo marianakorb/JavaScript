@@ -26,7 +26,7 @@ console.log(friend(amigos))
 // Outra forma de fazer:
 function friend(friends){
     return friends.filter(n => n.length === 4)
-  }
+}
 
 
 // MÉTODO filter()

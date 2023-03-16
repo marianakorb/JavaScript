@@ -35,3 +35,13 @@ function findEvenIndex(arr){
 }
 
 console.log(findEvenIndex([1,2,3,4,3,2,1]))
+
+// Método reduce()
+/*
+De maneira simples, o reduce busca reduzir um array. Isto é, ao final ele gera um valor único de qualquer tipo, como, por exemplo, a soma de todos os elementos de tal array. 
+Ela é uma função iteradora que, quando chamada, passa por todos os elementos de uma lista, executa alguma regra para cada um desses elementos e no final retorna alguma coisa.
+A função reduce é bastante flexível, bem mais que suas semelhantes. Isso porque ela retorna praticamente o que a gente quiser: um number, uma string, um objeto ou um novo array
+O método reduce() do JavaScript é uma função pilar da programação funcional. Ele executa uma função para cada elemento do array, isto é, ele acumula um único valor de uma matriz.
+
+
+*/

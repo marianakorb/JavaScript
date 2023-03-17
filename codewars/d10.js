@@ -32,9 +32,19 @@ se você receber uma matriz com várias respostas, retorne o menor índice corre
 
 function findEvenIndex(arr){
    // usar método reduce
+   for(let i = 0; i < arr.length; i++) {
+      const left = arr.slice(0, i)
+      const right = arr.slice(i + 1)
+
+      const somaLeft = left.reduce( (s, n) => s + n, 0)
+      const somaRight = right.reduce( (s, n) => s + n, 0)
+
+      if(somaLeft === somaRight) return i  
+   }
+   return -1
 }
 
-console.log(findEvenIndex([1,2,3,4,3,2,1]))
+console.log(findEvenIndex([10, 15, 10, 1, 10, 10, 15]))
 
 // Método reduce()
 /*
